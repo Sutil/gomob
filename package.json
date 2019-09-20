@@ -1,0 +1,14 @@
+{
+  "name": "aulas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Sutil/gomob.git",
+  "author": "Eduardo <sutil.edu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "json-server": "^0.15.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  }
+}
