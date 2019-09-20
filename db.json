@@ -10,6 +10,24 @@
       "name": "João",
       "email": "joao@neostech.com.br",
       "password": "123456"
+    },
+    {
+      "name": "Maria",
+      "email": "maria@email.com",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "name": "Marcos",
+      "email": "marcos@email.com",
+      "password": "123456",
+      "id": 7
+    },
+    {
+      "name": "Lucas",
+      "email": "lucas@email.com",
+      "password": "123",
+      "id": 8
     }
   ]
 }

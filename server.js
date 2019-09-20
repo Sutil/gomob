@@ -1,6 +1,5 @@
 // server.js
 const jsonServer = require('json-server')
-const db = require('./db.json')
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
@@ -15,6 +14,8 @@ function loginMiddle(req, res, next) {
   console.log('autenticando');
   console.log('email:', email);
   console.log('password:', password);
+
+  const db = require('./db.json');
 
   const { users } = db;
 
