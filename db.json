@@ -28,6 +28,18 @@
       "email": "lucas@email.com",
       "password": "123",
       "id": 8
+    },
+    {
+      "name": "Eduardo",
+      "email": "edu@email.com",
+      "password": "123",
+      "id": 9
+    },
+    {
+      "name": "Eduardo",
+      "email": "edu@email.com",
+      "password": "123456",
+      "id": 10
     }
   ],
   "jobs": [
@@ -40,7 +52,7 @@
     {
       "id": 2,
       "title": "Limpar teclado",
-      "price": 35.50,
+      "price": 35.5,
       "date": "2019-05-05 16:30:00"
     },
     {
@@ -52,7 +64,7 @@
     {
       "id": 4,
       "title": "Limpar teclado",
-      "price": 35.50,
+      "price": 35.5,
       "date": "2019-05-05 16:30:00"
     },
     {
@@ -64,7 +76,7 @@
     {
       "id": 6,
       "title": "Limpar teclado",
-      "price": 35.50,
+      "price": 35.5,
       "date": "2019-05-05 16:30:00"
     },
     {
@@ -76,7 +88,7 @@
     {
       "id": 8,
       "title": "Limpar teclado",
-      "price": 35.50,
+      "price": 35.5,
       "date": "2019-05-05 16:30:00"
     }
   ]

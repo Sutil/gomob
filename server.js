@@ -8,6 +8,9 @@ const middlewares = jsonServer.defaults()
 server.use(middlewares)
 server.use(jsonServer.bodyParser);
 
+
+
+
 function loginMiddle(req, res) {
   const { email, password } = req.body;
 
@@ -36,8 +39,14 @@ function loginMiddle(req, res) {
   }
   return res.status(401).json({erro: 'Verifique seus dados'});
 }
+server.use('/login', loginMiddle);
 
 function allReqs(req, res, next) {
+
+  if(req.originalUrl == '/users' && req.method == 'POST'){
+    console.log('criando usuário', req.body);
+    return next();
+  }
 
   const { authorization } = req.headers;
 
@@ -56,8 +65,6 @@ function allReqs(req, res, next) {
 }
 
 server.use(allReqs);
-
-server.use('/login', loginMiddle);
 
 server.use(router)
 
