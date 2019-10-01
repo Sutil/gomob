@@ -1,6 +1,8 @@
 ## Baixar backend fake
 
 git clone git@github.com:Sutil/gomob.git
+ou
+git clone https://github.com/Sutil/gomob.git
 
 dentro da pasta do projeto, executar:
 ```sh
