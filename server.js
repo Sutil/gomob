@@ -8,7 +8,7 @@ const middlewares = jsonServer.defaults()
 server.use(middlewares)
 server.use(jsonServer.bodyParser);
 
-function loginMiddle(req, res, next) {
+function loginMiddle(req, res) {
   const { email, password } = req.body;
 
   console.log('autenticando');
@@ -22,7 +22,11 @@ function loginMiddle(req, res, next) {
   const user = users.find((u => u.email === email));
 
   if(user && password && user.password === password) {
-    return res.json({token: 'ahfalkdhfak'});
+    return res.json({
+      token: 'ahfalkdhfak',
+      email,
+      name: user.name
+    });
   } 
 
   if(!user) {
@@ -32,6 +36,26 @@ function loginMiddle(req, res, next) {
   }
   return res.status(401).json({erro: 'Verifique seus dados'});
 }
+
+function allReqs(req, res, next) {
+
+  const { authorization } = req.headers;
+
+  if(!authorization) {
+    return res.status(401).json({error: 'Não autorizado. Token não informado'});
+  }
+
+  const token = authorization.split(' ')[1];
+
+  if(token !== 'ahfalkdhfak') {
+    return res.status(401).json({error: 'Token inválido'});
+  }
+
+  console.log(authorization);
+  return next();
+}
+
+server.use(allReqs);
 
 server.use('/login', loginMiddle);
 

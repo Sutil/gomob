@@ -112,6 +112,6 @@ public class MainActivity extends ReactActivity {
 
 - fazer criação de conta com axios.
 
-## Redux
+## Armazenar login (token)
 
 próxima aula
