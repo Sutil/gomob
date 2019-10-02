@@ -80,12 +80,6 @@
       "date": "2019-05-05 16:30:00"
     },
     {
-      "id": 3,
-      "title": "Formatar computador",
-      "price": 250,
-      "date": "2019-05-01 15:00:00"
-    },
-    {
       "id": 4,
       "title": "Limpar teclado",
       "price": 35.5,
@@ -108,12 +102,6 @@
       "title": "Formatar computador",
       "price": 250,
       "date": "2019-05-01 15:00:00"
-    },
-    {
-      "id": 8,
-      "title": "Limpar teclado",
-      "price": 35.5,
-      "date": "2019-05-05 16:30:00"
     }
   ]
 }
