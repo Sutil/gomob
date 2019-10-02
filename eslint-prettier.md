@@ -77,6 +77,13 @@ Na questão abaixo, use a `barra de espaço` para desmarcar todas as opções, p
 ```shel
 ? Would you like to install them now with npm? (Y/n) : Y
 ```
+Nesse processo o eslint usou o npm, mas estamos usando o yarn, então, delete o arquivo `package-lock.json`.
+
+Execute o comando: 
+```
+yarn
+```
+
 
 Após esses passos o eslint estará instalado, e agora vamos configurar.
 
