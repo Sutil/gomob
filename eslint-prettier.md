@@ -193,3 +193,5 @@ O conteúdo do arquivo deve ser semelhante ao a seguir:
 }
 
 ```
+
+Tenha certeza o que as extenções do Eslint e do prettier estão instaladas no VsCode.
